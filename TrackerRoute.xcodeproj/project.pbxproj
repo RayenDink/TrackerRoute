@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880DB59B4243A6BB89B65DDE /* libPods-TrackerRoute.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CA7FB85B2B300EBE617B00 /* libPods-TrackerRoute.a */; };
+		A30CFC572678FBF4005BBC93 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC562678FBF4005BBC93 /* MainCoordinator.swift */; };
+		A30CFC592678FC30005BBC93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC582678FC30005BBC93 /* ViewController.swift */; };
+		A30CFC5B2678FC7C005BBC93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC5A2678FC7C005BBC93 /* SceneDelegate.swift */; };
+		A30CFC5D2678FD26005BBC93 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC5C2678FD26005BBC93 /* Route.swift */; };
+		A30CFC5F2678FD45005BBC93 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC5E2678FD45005BBC93 /* UserRepository.swift */; };
+		A30CFC612678FD67005BBC93 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC602678FD67005BBC93 /* User.swift */; };
+		A30CFC632678FD84005BBC93 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC622678FD84005BBC93 /* StoryboardIdentifiable.swift */; };
+		A30CFC652678FDA0005BBC93 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC642678FDA0005BBC93 /* BaseCoordinator.swift */; };
+		A30CFC672678FE71005BBC93 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC662678FE71005BBC93 /* ApplicationCoordinator.swift */; };
+		A30CFC692678FE8A005BBC93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30CFC682678FE8A005BBC93 /* LocationManager.swift */; };
 		A30FE37726725132000C736F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FE37626725132000C736F /* AppDelegate.swift */; };
-		A30FE37926725132000C736F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FE37826725132000C736F /* SceneDelegate.swift */; };
-		A30FE37B26725132000C736F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FE37A26725132000C736F /* ViewController.swift */; };
+		A30FE37B26725132000C736F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30FE37A26725132000C736F /* MapViewController.swift */; };
 		A30FE37E26725132000C736F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30FE37C26725132000C736F /* Main.storyboard */; };
 		A30FE38026725133000C736F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30FE37F26725133000C736F /* Assets.xcassets */; };
 		A30FE38326725133000C736F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30FE38126725133000C736F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491A3058C9E744A13C64E5B9 /* Pods-TrackerRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerRoute.release.xcconfig"; path = "Target Support Files/Pods-TrackerRoute/Pods-TrackerRoute.release.xcconfig"; sourceTree = "<group>"; };
+		A30CFC562678FBF4005BBC93 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A30CFC582678FC30005BBC93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A30CFC5A2678FC7C005BBC93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A30CFC5C2678FD26005BBC93 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		A30CFC5E2678FD45005BBC93 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		A30CFC602678FD67005BBC93 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A30CFC622678FD84005BBC93 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		A30CFC642678FDA0005BBC93 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		A30CFC662678FE71005BBC93 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		A30CFC682678FE8A005BBC93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		A30FE37326725132000C736F /* TrackerRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackerRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30FE37626725132000C736F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A30FE37826725132000C736F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A30FE37A26725132000C736F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A30FE37A26725132000C736F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A30FE37D26725132000C736F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A30FE37F26725133000C736F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A30FE38226725133000C736F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30FE38426725133000C736F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAEC419F571B3938EEA6B9C2 /* Pods-TrackerRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerRoute.debug.xcconfig"; path = "Target Support Files/Pods-TrackerRoute/Pods-TrackerRoute.debug.xcconfig"; sourceTree = "<group>"; };
+		C2CA7FB85B2B300EBE617B00 /* libPods-TrackerRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrackerRoute.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880DB59B4243A6BB89B65DDE /* libPods-TrackerRoute.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4F23DF06D47C343E19EACE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAEC419F571B3938EEA6B9C2 /* Pods-TrackerRoute.debug.xcconfig */,
+				491A3058C9E744A13C64E5B9 /* Pods-TrackerRoute.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A30FE36A26725132000C736F = {
 			isa = PBXGroup;
 			children = (
 				A30FE37526725132000C736F /* TrackerRoute */,
 				A30FE37426725132000C736F /* Products */,
+				0E4F23DF06D47C343E19EACE /* Pods */,
+				C2B028C54D14B4E4955857F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +91,31 @@
 			isa = PBXGroup;
 			children = (
 				A30FE37626725132000C736F /* AppDelegate.swift */,
-				A30FE37826725132000C736F /* SceneDelegate.swift */,
-				A30FE37A26725132000C736F /* ViewController.swift */,
+				A30CFC5A2678FC7C005BBC93 /* SceneDelegate.swift */,
+				A30CFC5C2678FD26005BBC93 /* Route.swift */,
+				A30CFC5E2678FD45005BBC93 /* UserRepository.swift */,
+				A30CFC602678FD67005BBC93 /* User.swift */,
+				A30CFC622678FD84005BBC93 /* StoryboardIdentifiable.swift */,
+				A30CFC642678FDA0005BBC93 /* BaseCoordinator.swift */,
+				A30CFC662678FE71005BBC93 /* ApplicationCoordinator.swift */,
+				A30CFC682678FE8A005BBC93 /* LocationManager.swift */,
+				A30FE37A26725132000C736F /* MapViewController.swift */,
+				A30CFC582678FC30005BBC93 /* ViewController.swift */,
 				A30FE37C26725132000C736F /* Main.storyboard */,
+				A30CFC562678FBF4005BBC93 /* MainCoordinator.swift */,
 				A30FE37F26725133000C736F /* Assets.xcassets */,
 				A30FE38126725133000C736F /* LaunchScreen.storyboard */,
 				A30FE38426725133000C736F /* Info.plist */,
 			);
 			path = TrackerRoute;
+			sourceTree = "<group>";
+		};
+		C2B028C54D14B4E4955857F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2CA7FB85B2B300EBE617B00 /* libPods-TrackerRoute.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A30FE38726725133000C736F /* Build configuration list for PBXNativeTarget "TrackerRoute" */;
 			buildPhases = (
+				9CADC3967026490994D7297A /* [CP] Check Pods Manifest.lock */,
 				A30FE36F26725132000C736F /* Sources */,
 				A30FE37026725132000C736F /* Frameworks */,
 				A30FE37126725132000C736F /* Resources */,
+				D799A0FC0173CE277DA0B606 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,7 +155,7 @@
 				};
 			};
 			buildConfigurationList = A30FE36E26725132000C736F /* Build configuration list for PBXProject "TrackerRoute" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,14 +185,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CADC3967026490994D7297A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackerRoute-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D799A0FC0173CE277DA0B606 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackerRoute/Pods-TrackerRoute-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackerRoute/Pods-TrackerRoute-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackerRoute/Pods-TrackerRoute-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A30FE36F26725132000C736F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30FE37B26725132000C736F /* ViewController.swift in Sources */,
+				A30CFC5B2678FC7C005BBC93 /* SceneDelegate.swift in Sources */,
+				A30FE37B26725132000C736F /* MapViewController.swift in Sources */,
+				A30CFC572678FBF4005BBC93 /* MainCoordinator.swift in Sources */,
+				A30CFC5F2678FD45005BBC93 /* UserRepository.swift in Sources */,
+				A30CFC612678FD67005BBC93 /* User.swift in Sources */,
+				A30CFC652678FDA0005BBC93 /* BaseCoordinator.swift in Sources */,
+				A30CFC632678FD84005BBC93 /* StoryboardIdentifiable.swift in Sources */,
+				A30CFC5D2678FD26005BBC93 /* Route.swift in Sources */,
+				A30CFC692678FE8A005BBC93 /* LocationManager.swift in Sources */,
+				A30CFC592678FC30005BBC93 /* ViewController.swift in Sources */,
 				A30FE37726725132000C736F /* AppDelegate.swift in Sources */,
-				A30FE37926725132000C736F /* SceneDelegate.swift in Sources */,
+				A30CFC672678FE71005BBC93 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +387,7 @@
 		};
 		A30FE38826725133000C736F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAEC419F571B3938EEA6B9C2 /* Pods-TrackerRoute.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +407,7 @@
 		};
 		A30FE38926725133000C736F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491A3058C9E744A13C64E5B9 /* Pods-TrackerRoute.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,24 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TrackerRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeG-Z5-wbc" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5J7-LN-rvv">
+                                <rect key="frame" x="16" y="60" width="35" height="30"/>
+                                <state key="normal" title="Стоп"/>
+                                <connections>
+                                    <action selector="currentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMg-Ws-IR7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybl-Tq-BVK">
+                                <rect key="frame" x="347" y="60" width="51" height="30"/>
+                                <state key="normal" title="Запись"/>
+                                <connections>
+                                    <action selector="recordLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9q-ah-hFF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-yO-WL4">
+                                <rect key="frame" x="129" y="60" width="156" height="30"/>
+                                <state key="normal" title="Последний марштрут"/>
+                                <connections>
+                                    <action selector="lastroute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0s-PA-QTT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5J7-LN-rvv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="2xG-rw-VeP"/>
+                            <constraint firstItem="qeG-Z5-wbc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6c2-wz-NZJ"/>
+                            <constraint firstItem="qeG-Z5-wbc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AWb-xt-TQ9"/>
+                            <constraint firstItem="Ime-yO-WL4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="IbO-hb-igv"/>
+                            <constraint firstAttribute="bottom" secondItem="qeG-Z5-wbc" secondAttribute="bottom" id="Ty1-5X-Vfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qeG-Z5-wbc" secondAttribute="trailing" id="XCg-KR-96E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ybl-Tq-BVK" secondAttribute="trailing" constant="16" id="aSw-pT-8x4"/>
+                            <constraint firstItem="5J7-LN-rvv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="o2v-cx-YC6"/>
+                            <constraint firstItem="Ime-yO-WL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIf-kD-96e"/>
+                            <constraint firstItem="Ybl-Tq-BVK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zhO-Dd-BHH"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gbe-rs-0ul"/>
+                    <connections>
+                        <outlet property="mapView" destination="qeG-Z5-wbc" id="D3s-vc-D2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1415.9420289855072" y="77.678571428571431"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="b8X-bo-rid">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="464-a7-Qpe" customClass="MainViewController" customModule="TrackerRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bl4-hA-e4B" customClass="MainViewCo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="KDf-PX-fgO">
+                                <rect key="frame" x="151.5" y="408.5" width="111" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGS-4g-zxo">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
+                                        <state key="normal" title="Показать карту"/>
+                                        <connections>
+                                            <action selector="showMap:" destination="464-a7-Qpe" eventType="touchUpInside" id="OVV-aY-v6d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhE-9O-ksz">
+                                        <rect key="frame" x="0.0" y="49" width="111" height="30"/>
+                                        <state key="normal" title="Выйти"/>
+                                        <connections>
+                                            <action selector="logout:" destination="464-a7-Qpe" eventType="touchUpInside" id="aQU-DC-eD2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kih-gD-JUm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KDf-PX-fgO" firstAttribute="centerX" secondItem="bl4-hA-e4B" secondAttribute="centerX" id="948-6A-X5i"/>
+                            <constraint firstItem="KDf-PX-fgO" firstAttribute="centerY" secondItem="bl4-hA-e4B" secondAttribute="centerY" id="wDb-ke-JDf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="crP-Qf-7Ig"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1t-fE-eqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600" y="75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
